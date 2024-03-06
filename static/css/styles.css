@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #20FD15;
+    --secondary-color: #68FEC6;
+    --accent-color: #47FDEB;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Header section */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5% 10px 2%;
+
+    img {
+        width: 5%;
+    }
+
+    nav {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            color: black;
+        font-size: large;
+        text-decoration: none;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        }
+
+        a:before {
+            content: "";
+            width: 100%;
+            height: 30%;
+            display: block;
+            z-index: -1;
+            opacity: 30%;
+            position: absolute;
+            transition: all .3s ease;
+            background-color: var(--accent-color)
+        }
+
+        a:hover::before {
+            height: 70%;
+        }
+    }
+}
+
+/* Header section end */
+
+
+
+/* Main section */
+
+main {
+    max-width: 100%;
+}
+
+/* Slider section */
+
+section.slider {
+    max-width: 100%;
+
+
+    div.slide {
+        width: 70%;
+        margin: 0 auto;
+        position: relative; 
+
+        div.slider-content {
+            z-index: 1;
+            position: absolute;
+            bottom: 50px;
+            left: 20px;
+
+            a {
+                color: black;
+                text-decoration: none;
+                position: relative;
+            }
+    
+            a:before {
+                content: "";
+                width: 100%;
+                height: 30%;
+                display: block;
+                z-index: -1;
+                opacity: 30%;
+                position: absolute;
+                bottom: 0px;
+                transition: all .3s ease;
+                background-color: var(--accent-color)
+            }
+    
+            a:hover::before {
+                height: 70%;
+            }
+            
+            * {
+                margin-bottom: 10px;
+            }
+
+            p {
+                margin-bottom: 30px;
+            }
+        }
+
+        img.image {
+            max-width: 100%;
+        }
+        img.arrow-left {
+            max-width: 5%;
+            position: absolute;
+            left: 10px;
+            top: 45%;
+            
+        }
+        img.arrow-right {
+            position: absolute;
+            right: 10px;
+            top: 45%;
+           max-width: 5%;
+        }
+
+    }
+
+    div.slide:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: transparent;
+        background-image: linear-gradient(0deg, white 10%, transparent 50% );
+        opacity: 0.9;
+    }
+
+}
+
+/* Slider section end */
+
+/* Main section end */
