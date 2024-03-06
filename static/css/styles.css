@@ -205,4 +205,74 @@ section.fast-search {
 
 
 
+/* Facts section */
+
+section.facts {
+    padding: 5% 0;
+    display: flex;
+    justify-content: center;
+    border-bottom: solid var(--secondary-color);
+    ul {
+        list-style-type: none;
+
+        li {
+            margin-bottom: 2rem;
+            font-size: large;
+            text-align: center;
+        }
+        li:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+/* Facts section end */
+
+
+
+/* Cards section */
+
+section.finds {
+    max-width: 100%;
+    padding: 5% 0;
+    display: flex;
+    justify-content: center;
+    border-bottom: solid var(--secondary-color);
+
+    div.cards {
+        max-width: 80%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+
+        div.card {
+
+            display: flex;
+            flex-direction: column;
+            padding: 2%;
+            border: solid var(--accent-color);
+
+            img {
+                max-width: 100%;
+            }
+
+            span.data {
+                font-size: small;
+            }
+
+            span {
+                margin-bottom: 1rem;
+            }
+
+            span:last-of-type{
+                margin-left: auto;
+                margin-top: auto;
+                color: darkgray;
+            }
+        }
+    }
+}
+
+/* Cards section end */
+
 /* Main section end */
