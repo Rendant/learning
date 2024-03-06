@@ -17,6 +17,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 5% 10px 2%;
+    border-bottom: solid var(--secondary-color);
 
     img {
         width: 5%;
@@ -68,7 +69,9 @@ main {
 /* Slider section */
 
 section.slider {
+    padding: 5% 0;
     max-width: 100%;
+    border-bottom: solid var(--secondary-color);
 
 
     div.slide {
@@ -149,5 +152,57 @@ section.slider {
 }
 
 /* Slider section end */
+
+
+
+/* Fast-search section */
+
+section.fast-search {
+    padding: 5% 0;
+    max-width: 100%;
+    border-bottom: solid var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        background: linear-gradient(120deg, var(--primary-color) , var(--secondary-color));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+    }
+
+    form {
+        width: 100%;
+        margin-top: 3rem;
+        display: flex;
+        justify-content: center;
+
+        input {
+            border: solid grey 2px;
+            width: 50%;
+            height: 2rem;
+            transition: all 0.3s;
+        }
+
+        input:focus {
+            outline: none;
+            border: solid var(--accent-color) 2px;
+        }
+
+        button {
+            margin: auto 5px;
+            background-color: var(--accent-color);
+            border: none;
+            height: calc(2rem + 3px);
+            width: 4rem;
+            font-weight: bold;
+        }
+    }
+}
+
+/* Fast-serarch section end */
+
+
 
 /* Main section end */
